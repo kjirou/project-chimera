@@ -3,7 +3,7 @@ import React from 'react';
 import pages from './pages';
 
 
-export default class RetryHeroes extends React.Component {
+export default class Root extends React.Component {
 
   _getCurrentPage() {
     return pages['GAME'];
