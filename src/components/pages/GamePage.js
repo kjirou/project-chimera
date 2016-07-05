@@ -21,34 +21,31 @@ export default class GamePage extends Page {
         <div className="game-page__header">
           Header
         </div>
-        <div className="game-page__dungeon-cards">
-          { _createCards(3, 'game-page__dungeon-cards__card-container') }
+        <div className="game-page__field">
+          Field
         </div>
-        <div className="game-page__message-viewer">
-          Message Viewer
+        <div className="game-page__messages">
+          Messages
         </div>
-        <div className="game-page__character-cards">
-          <div className="game-page__character-cards__tab-contents">
-            <div className="game-page__character-cards__hand-cards">
-              { _createCards(6, 'game-page__character-cards__tab-contents__card-container') }
-            </div>
-            <div className="game-page__character-cards__active-skills">
-              { _createCards(6, 'game-page__character-cards__tab-contents__card-container') }
-            </div>
-            <div className="game-page__character-cards__equipments">
-              { _createCards(6, 'game-page__character-cards__tab-contents__card-container') }
-            </div>
-            <div className="game-page__character-cards__passive-skills">
-              { _createCards(6, 'game-page__character-cards__tab-contents__card-container') }
-            </div>
-          </div>
-          <ul className="game-page__character-cards__tab-menus">
-            <li className="tab-menu-is-selected">Hand</li>
-            <li>Active</li>
-            <li>Passive</li>
-            <li>Equipments</li>
-          </ul>
+        <div className="game-page__controller">
+          <div className="status-button">Stat</div>
+          <div className="next-button">Next</div>
+          <div className="system-button">Sys</div>
         </div>
+        <ul className="game-page__parts-and-skills">
+          <li className="category-partition">Parts</li>
+          <li className="bar">part</li>
+          <li className="bar">part</li>
+          <li className="bar">part</li>
+          <li className="bar">part</li>
+          <li className="bar">part</li>
+          <li className="category-partition">Skills</li>
+          <li className="bar">skill</li>
+          <li className="bar">skill</li>
+          <li className="bar">skill</li>
+          <li className="bar">skill</li>
+          <li className="bar">skill</li>
+        </ul>
       </div>
     );
   }

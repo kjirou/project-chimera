@@ -20,8 +20,8 @@ export default class Root extends React.Component {
     });
 
     return (
-      <div className="rh">
-        <div className="rh__page-container">
+      <div className="root">
+        <div className="root__page-container">
           { page }
         </div>
       </div>
