@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Card from '../Card';
+import PartBar from '../bars/PartBar';
+import SkillBar from '../bars/SkillBar';
 import Page from './Page';
 
 
@@ -34,17 +35,17 @@ export default class GamePage extends Page {
         </div>
         <ul className="game-page__parts-and-skills">
           <li className="category-partition">Parts</li>
-          <li className="bar">part</li>
-          <li className="bar">part</li>
-          <li className="bar">part</li>
-          <li className="bar">part</li>
-          <li className="bar">part</li>
+          <PartBar />
+          <PartBar />
+          <PartBar />
+          <PartBar />
+          <PartBar />
           <li className="category-partition">Skills</li>
-          <li className="bar">skill</li>
-          <li className="bar">skill</li>
-          <li className="bar">skill</li>
-          <li className="bar">skill</li>
-          <li className="bar">skill</li>
+          <SkillBar />
+          <SkillBar />
+          <SkillBar />
+          <SkillBar />
+          <SkillBar />
         </ul>
       </div>
     );
