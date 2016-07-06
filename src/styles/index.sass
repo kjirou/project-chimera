@@ -10,6 +10,7 @@ $app-background-color: #000000
 $app-color: #ffffff
 $app-height: 600px
 $app-width: 360px
+$app-width-scroll-bar: 20px
 $icon-height: 32px
 $icon-width: 32px
 $z-index-default: 1
@@ -114,12 +115,14 @@ body.is-development
         width: 20%
 
     &__parts-and-skills
+      width: $app-width + $app-width-scroll-bar;
       height: $app-height - 48 - 180 - 48 - 64
       overflow: scroll
       overflow-x: hidden
 
       li
         display: block
+        width: $app-width;
 
         &.category-partition
           height: 16px
