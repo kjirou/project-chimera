@@ -6,10 +6,10 @@
 //
 // Should sync to consts.STYLES
 //
+$app-background-color: #000000
+$app-color: #ffffff
 $app-height: 600px
 $app-width: 360px
-$color-background: #000000
-$color-text: #ffffff
 $icon-height: 32px
 $icon-width: 32px
 $z-index-default: 1
@@ -52,7 +52,7 @@ body.is-development
     position: relative
     width: $app-width
     height: $app-height
-    background-color: $color-background
+    background-color: $app-background-color
 
     .root__page-container
       position: absolute
@@ -71,8 +71,8 @@ body.is-development
     width: $app-width
     height: $app-height
     font-size: 12px
-    color: $color-text
-    background-color: $color-background
+    color: $app-color
+    background-color: $app-background-color
 
   .game-page
     $margin-side: 8px
@@ -96,8 +96,8 @@ body.is-development
 
       @mixin button-base()
         height: 48px
-        background-color: $color-background
-        border: 2px solid $color-text
+        background-color: $app-background-color
+        border: 2px solid $app-color
         border-radius: 4px
         cursor: pointer
 
@@ -128,9 +128,9 @@ body.is-development
           line-height: 16px
           font-family: 'Morris Roman'
           letter-spacing: 3px
-          color: $color-background
-          background-color: $color-text
+          color: $app-background-color
+          background-color: $app-color
 
         &.bar
           height: 50px
-          border-bottom: 2px solid $color-text
+          border-bottom: 2px solid $app-color
