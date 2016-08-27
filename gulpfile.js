@@ -241,6 +241,7 @@ gulp.task('serve', function() {
       baseDir: PUBLIC_ROOT,
     },
     notify: false,
+    open: false,
   });
 });
 
