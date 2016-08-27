@@ -11,7 +11,6 @@ const gulpImageDataURI = require('gulp-image-data-uri');
 const gulpRename = require('gulp-rename');
 const gulpSass = require('gulp-sass');
 const gulpShell = require('gulp-shell');
-const licensify = require('licensify');
 const notifier = require('node-notifier');
 const path = require('path');
 const runSequence = require('run-sequence');
