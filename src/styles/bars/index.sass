@@ -1,0 +1,16 @@
+/*
+ * Bars
+ */
+&
+  @mixin bar-base()
+    width: $app-width
+    height: 50px
+    border-bottom: 2px solid $app-color
+    color: $app-color
+    background-color: $app-background-color
+
+  .skill-bar
+    @include bar-base()
+
+  .part-bar
+    @include bar-base()

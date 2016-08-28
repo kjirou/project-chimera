@@ -7,7 +7,7 @@ export default class PartBar extends Bar {
 
   render() {
     return (
-      <li className="bar">part</li>
+      <li className="part-bar">part</li>
     );
   }
 }
