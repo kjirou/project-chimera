@@ -15,19 +15,24 @@
     $content-width: $app-width - $margin-side * 2
     @include page-base()
 
+    $header-height: 48px
+    $field-height: 200px
+    $messages-height: 48px
+    $controller-height: 72px
+
     &__header
-      height: 48px
+      height: $header-height
 
     &__field
-      height: 200px
+      height: $field-height
 
     &__messages
-      height: 48px
+      height: $messages-height
 
     &__controller
       display: flex
       justify-content: space-between
-      height: 72px
+      height: $controller-height
       padding: 8px 12px
 
       @mixin button-base()
@@ -57,7 +62,7 @@
 
     &__parts-and-skills
       width: $app-width + $app-width-scroll-bar
-      height: $app-height - 48 - 200 - 48 - 64
+      height: $app-height - $header-height - $field-height - $messages-height - $controller-height
       overflow: scroll
       overflow-x: hidden
 
