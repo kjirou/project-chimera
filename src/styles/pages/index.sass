@@ -27,27 +27,33 @@
     &__controller
       display: flex
       justify-content: space-between
-      height: 64px
+      height: 72px
       padding: 8px 12px
 
       @mixin button-base()
-        height: 48px
+        height: 56px
+        line-height: 56px
         background-color: $app-background-color
         border: 2px solid $app-color
-        border-radius: 4px
+        font-family: 'Press Start K'
         cursor: pointer
+        text-align: center
 
       .status-button
         @include button-base()
         width: 20%
+        font-size: 12px
 
       .next-button
         @include button-base()
         width: 50%
+        font-size: 18px
+        letter-spacing: 2px
 
       .system-button
         @include button-base()
         width: 20%
+        font-size: 12px
 
     &__parts-and-skills
       width: $app-width + $app-width-scroll-bar
@@ -65,6 +71,6 @@
           font-size: 12px
           line-height: 18px
           font-family: 'Press Start K'
-          letter-spacing: 3px
+          letter-spacing: 2px
           color: $app-background-color
           background-color: $app-color
