@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { computeScrollTopToKeepOnInBounds } from '../../lib/utils';
+import Card from '../Card';
 import PartBar from '../bars/PartBar';
 import SkillBar from '../bars/SkillBar';
 import Page from './Page';
@@ -37,6 +38,8 @@ export default class GamePage extends Page {
       });
     };
 
+    const cards = _createCards(3, 'game-page__field__card');
+
     return (
       <div
         className="game-page"
@@ -46,7 +49,7 @@ export default class GamePage extends Page {
           Header
         </div>
         <div className="game-page__field">
-          Field
+          { cards }
         </div>
         <div className="game-page__messages">
           Messages

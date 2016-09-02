@@ -15,16 +15,27 @@
     $content-width: $app-width - $margin-side * 2
     @include page-base()
 
-    $header-height: 48px
-    $field-height: 200px
-    $messages-height: 48px
-    $controller-height: 72px
+    $header-height: 20px
+    $field-height: 236px
+    $messages-height: 40px
+    $controller-height: 88px
 
     &__header
       height: $header-height
 
     &__field
+      display: flex
       height: $field-height
+      justify-content: space-between
+      align-items: center
+      padding-left: 12px
+      padding-right: 12px
+
+      &__card
+        &:first-child
+          margin-top: 48px
+        &:last-child
+          margin-bottom: 48px
 
     &__messages
       height: $messages-height
@@ -33,7 +44,7 @@
       display: flex
       justify-content: space-between
       height: $controller-height
-      padding: 8px 12px
+      padding: 12px 12px
 
       @mixin button-base()
         height: 56px
