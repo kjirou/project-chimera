@@ -7,7 +7,7 @@ export default class SkillBar extends Bar {
 
   render() {
     return (
-      <li className="bar">skill</li>
+      <li className="skill-bar">skill</li>
     );
   }
 }
